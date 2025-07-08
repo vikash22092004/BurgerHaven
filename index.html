@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Burger Haven</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/burger-large.png" alt="Burger Graphic" class="corner-burger" />
+        <div class="cont">
+            <nav>
+                <img src="images/logo.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Menu</a></li>
+                    <li><a href="#Myfavourites">Best Sellers</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> <img src="images/burger.png" alt="cheese icon" style="width: 30px; vertical-align: middle;" /> Burgers that make your soul happy!</p>
+                <h1 class="hi">Welcome to <span>The Burger Haven</span><br />Home of the Juiciest Buns in Coimbatore</h1>
+                <p style="margin-top: 20px; font-size: 20px;"> Serving smiles, one cheesy bite at a time. Come hungry, leave cheesy! <img src="images/cheese.png" alt="cheese icon" style="width: 30px; vertical-align: middle;" /></p>
+            </div>
+        </div>
+    </div>
+
+    <!-----------Menu Section-------->
+    <div id="about">
+        <div class="cont">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/CHEESEBURGERS.jpg" class="img" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Our Menu</h1>
+                    <p style="font-weight: 600;font-size: 14px;">
+                    Whether you’re a veggie lover or a meat muncher, we’ve got the perfect buns just for you! Crafted with love, stacked with flavor, and dripping with cheesy goodness.
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('veg')">Veg Burgers</p>
+                        <p class="tab-links" onclick="opentab('nonveg')">Non-Veg Burgers</p>
+                    </div>
+
+                    <!-- Veg Menu -->
+                    <div class="tab-contents active-tab" id="veg">
+                        <ul>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Classic Veggie Burger</span>
+                                    <span class="price">₹120</span>
+                                </div>
+                                <p>Crispy patty, lettuce, tomato & house sauce</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Spicy Paneer Delight</span>
+                                    <span class="price">₹150</span>
+                                </div>
+                                <p>Grilled paneer, jalapeños, and spicy chipotle mayo</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Cheese Overload</span>
+                                    <span class="price">₹170</span>
+                                </div>
+                                <p>Three types of cheese + love = bliss</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Mushroom Magic</span>
+                                    <span class="price">₹140</span>
+                                </div>
+                                <p>Sautéed mushrooms, onions, and garlic mayo</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Non-Veg Menu -->
+                    <div class="tab-contents" id="nonveg">
+                        <ul>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Classic Chicken Crunch</span>
+                                    <span class="price">₹160</span>
+                                </div>
+                                <p>Crispy fried chicken, lettuce, mayo & pickles</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Fiery Chicken Blast</span>
+                                    <span class="price">₹180</span>
+                                </div>
+                                <p>Spicy grilled chicken, cheese, and fiery sauce</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Double Beef Madness</span>
+                                    <span class="price">₹220</span>
+                                </div>
+                                <p>Two juicy beef patties stacked with cheddar</p>
+                            </li>
+                            <li>
+                                <div class="menu-item-header">
+                                    <span>Egg & Bacon Bliss</span>
+                                    <span class="price">₹190</span>
+                                </div>
+                                <p>Soft egg, crunchy bacon, and cheesy melt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------My Favs------>
+    <div id="Myfavourites">
+        <div class="cont">
+            <h1 class="sub-title">Best Sellers❗</h1>
+            <div class="favourites-list">
+                <div>
+                    <h2>Classic Veggie Burger</h2>
+                    <p>Crispy patty, lettuce, tomato & house sauce</p>
+                </div>
+                <div>
+                    <h2>Spicy Paneer Delight</h2>
+                    <p>Grilled paneer, jalapeños, and spicy chipotle mayo</p>
+                </div>
+                <div>
+                    <h2>Classic Chicken Crunch</h2>
+                    <p>Crispy fried chicken, lettuce, mayo & pickles</p>
+                </div>
+                <div>
+                    <h2>Double Beef Madness</h2>
+                    <p>Two juicy beef patties stacked with cheddar</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section">
+    <div class="feedback-container">
+        <h1 class="sub-title">We’d Love Your Feedback! 🍔</h1>
+        <form id="feedbackForm" onsubmit="handleSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Share your thoughts..." required></textarea>
+        <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Toast Message -->
+    <div id="toast">Thank you for your feedback! 🍔</div>
+
+    <div id="contact">
+    <div class="contact-wrapper">
+
+        <!-- LEFT: Contact Box -->
+        <div class="contact-box">
+        <h1 class="sub-title">Contact Burger Haven</h1>
+        <p><i class="fas fa-envelope"></i> burgerhaven.coimbatore@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0422-1234567</p>
+        <p><i class="fas fa-map-marker-alt"></i> 12, Burger Street, Coimbatore.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        </div>
+
+        <!-- RIGHT: Contact Message -->
+        <div class="contact-message">
+        <p>
+            <i class="fas fa-comment-dots"></i> Craving a cheesy bite or want to throw a burger bash?<br><br>
+            Drop us a line! Whether you want to book a table, order in bulk, or just chat about your favorite burger! <br><strong>Burger Haven</strong> is here for you.<br><br>
+            Let’s make your next meal unforgettable! <img src="images/burger.png" alt="cheese icon" style="width: 30px; vertical-align: middle;" />
+        </p>
+        </div>
+
+    </div>
+    </div>
+
+        <div class="copyright">
+            <p>Copyright © Vikash. Made by Vikash J <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            // Optional: You can collect values here
+            const form = document.getElementById('feedbackForm');
+            form.reset(); // Clear form fields
+
+            // Show toast
+            const toast = document.getElementById('toast');
+            toast.style.opacity = '1';
+
+            // Hide toast after 3 seconds
+            setTimeout(() => {
+                toast.style.opacity = '0';
+            }, 3000);
+        }
+        function handleSubmit(event) {
+        event.preventDefault();
+        document.getElementById("feedbackForm").reset();
+        const toast = document.getElementById("toast");
+        toast.style.opacity = "1";
+        setTimeout(() => {
+            toast.style.opacity = "0";
+        }, 3000);
+    }
+    function scrollToTop() {
+    document.getElementById("header").scrollIntoView({ behavior: "smooth" });
+    }
+    </script>
+    <button id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i> Home
+    </button>
+</body>
+
+</html>
