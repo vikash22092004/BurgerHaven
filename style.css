@@ -25,6 +25,8 @@ body::-webkit-scrollbar {
 #header,
 #about,
 #Myfavourites,
+#awards,
+#partners,
 #feedback,
 #contact {
   scroll-snap-align: start;
@@ -264,6 +266,150 @@ nav ul li a:hover {
     margin-bottom: 2px;
 }
 
+/* Universal snap scroll section style */
+.snap-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.center-content {
+  text-align: center;
+  max-width: 1000px;
+}
+
+/* About Us styling */
+.about-desc {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+#gallery {
+  background: #fff3c7;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Gallery styling */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.gallery-grid img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials */
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 300px;
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #fa3131;
+}
+
+.newsletter-box {
+  background-color: #fa3131;
+  color: #fff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 40px auto;
+  max-width: 700px;
+  width: 90%;
+}
+
+.newsletter-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.newsletter-form input {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 280px;
+  max-width: 90%;
+}
+
+.newsletter-form button {
+  padding: 12px 20px;
+  background-color: #ffd641;
+  color: #fa3131;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #f6c830;
+}
+
 /*----------My Favourites--------*/
 #Myfavourites,
 #contact {
@@ -282,9 +428,9 @@ nav ul li a:hover {
     justify-items: center;
 }
 .favourites-list div {
-    background: #ffd641;
+    background: linear-gradient(to right, #ffe259, #ffa751);
     color: #ff2c2c;
-    padding: 40px 30px;
+    padding: 20px 10px;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     display: flex;
@@ -344,11 +490,88 @@ nav ul li a:hover {
 .favourites-list div:hover{
    font-weight: bold;
    color: #ff2c2c;
-   background: #ffd641 ;
+   background:  linear-gradient(to right, #ffa751, #ffe259) ;
    transform: translateY(-10px); 
 }
 .good{
     font-size: 18px;
+}
+
+.awards-section {
+    background: #fff6e6;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.awards-section .sub-title {
+    text-align: center;
+    font-size: 36px;
+    color: #d35400;
+    margin-bottom: 40px;
+}
+
+.awards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.award {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.award:hover {
+    transform: translateY(-10px);
+}
+
+.award i {
+    font-size: 40px;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.award h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.award p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Brand Partners */
+.partners h2 {
+    text-align: center;
+    font-size: 35px;
+    color: #de6c09;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.partner-logos img {
+    height: 30px;
+    object-fit: contain;
 }
 
 /* Only apply full-height and snap to feedback section */
